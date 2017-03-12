@@ -1,0 +1,16 @@
+{
+  "name": "my-elm-calendar",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "elm": "^0.18.0",
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "server": "http-server -p 9000",
+    "build": "elm-make Main.elm --output main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
