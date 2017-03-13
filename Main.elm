@@ -1,4 +1,4 @@
-module Main exposing (..)
+port module Main exposing (..)
 
 import Html exposing (..)
 
@@ -17,6 +17,20 @@ main =
         , update = update
         , subscriptions = \_ -> Sub.none
         }
+
+
+
+-- should get date instead of string
+
+
+port getEvents : String -> Cmd msg
+
+
+
+-- not sure how it will work
+
+
+port calendarEvents : (List String -> msg) -> Sub msg
 
 
 init savedModel =
